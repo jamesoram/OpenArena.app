@@ -1,0 +1,14 @@
+diff --git a/Makefile b/Makefile
+index c35f3219..3adc661c 100644
+--- a/Makefile
++++ b/Makefile
+@@ -299,6 +299,9 @@ endif
+
+ BASE_CFLAGS =
+
++BASE_CFLAGS += -DUSE_Q3KEY
++BASE_CFLAGS += -DUSE_MD5
++
+ ifeq ($(USE_SYSTEM_JPEG),1)
+   BASE_CFLAGS += -DUSE_SYSTEM_JPEG
+ endif
