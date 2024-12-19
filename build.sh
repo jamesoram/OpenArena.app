@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 cd "$(dirname "$0")"
-git clone https://github.com/ec-/Quake3e.git
+git clone --depth=1 https://github.com/ec-/Quake3e.git
 cd Quake3e
 git apply ../duplicate-guid-fix.patch
 make
